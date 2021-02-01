@@ -10,7 +10,7 @@ using System.Threading.Tasks;
 namespace ApiFramework.Api.EYDX_Discussion
 {
     [RestMethod(Method.POST)]
-    [Path("api/v1/discussions?userEmail=aishwarya.gupta4@in.ey.com")]
+    [Path("api/v1/discussions?userEmail=aishwarya.gupta4@ey.com")]
     class PostDiscussion
     {
         [Header("Content-Type")]
@@ -36,7 +36,7 @@ namespace ApiFramework.Api.EYDX_Discussion
     }
 
     [RestMethod(Method.PUT)]
-    [Path("api/v1/discussions/{discussionGuid}?userEmail=aishwarya.gupta4@in.ey.com")]
+    [Path("api/v1/discussions/{discussionGuid}?userEmail=aishwarya.gupta4@ey.com")]
     class PutDiscussion
     {
         [Path("discussionGuid")]
@@ -53,7 +53,7 @@ namespace ApiFramework.Api.EYDX_Discussion
     }
 
     [RestMethod(Method.GET)]
-    [Path("api/v1/discussions?userEmail=aishwarya.gupta4@in.ey.com")]
+    [Path("api/v1/discussions?userEmail=aishwarya.gupta4@ey.com")]
     class GetDiscussion
     {
         [Header("EYDX-DISCUSSIONS-SERVICE-API-KEY")]
@@ -61,7 +61,7 @@ namespace ApiFramework.Api.EYDX_Discussion
     }
 
     [RestMethod(Method.GET)]
-    [Path("api/v1/discussions/{discussionGuid}?userEmail=aishwarya.gupta4@in.ey.com")]
+    [Path("api/v1/discussions/{discussionGuid}?userEmail=aishwarya.gupta4@ey.com")]
     class GetDiscussionByID
     {
         [Path("discussionGuid")]
@@ -72,7 +72,7 @@ namespace ApiFramework.Api.EYDX_Discussion
     }
 
     [RestMethod(Method.PATCH)]
-    [Path("api/v1/discussions/{discussionGuid}?userEmail=aishwarya.gupta4@in.ey.com&isEditable={isEditable}&isHidden={isHidden}")]
+    [Path("api/v1/discussions/{discussionGuid}?userEmail=aishwarya.gupta4@ey.com&isEditable={isEditable}&isHidden={isHidden}")]
     class PatchDiscussion
     {
         [Path("discussionGuid")]
@@ -89,7 +89,7 @@ namespace ApiFramework.Api.EYDX_Discussion
     }
 
     [RestMethod(Method.DELETE)]
-    [Path("api/v1/discussions/{discussionGuid}?userEmail=aishwarya.gupta4@in.ey.com")]
+    [Path("api/v1/discussions/{discussionGuid}?userEmail=aishwarya.gupta4@ey.com")]
     class DeleteDiscussion
     {
         [Path("discussionGuid")]
